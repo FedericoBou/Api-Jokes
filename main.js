@@ -20,11 +20,9 @@ const KELVIN = 273;
 const key = '96f6ba150dbfde1782395bffef95d6a2';
 
 //Localizador en el buscador
-if ('geolocation' in navigator) 
-{
+if('geolocation' in navigator) {
     navigator.geolocation.getCurrentPosition(setPosition, showError);
-} else 
-{
+} else {
     notificationElement.getElementsByClassName.display = 'block';
     notificationElement.innerHTML = "<p> Browser does't support your location </p>"
 }
